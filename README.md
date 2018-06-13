@@ -11,54 +11,54 @@ A tic-tac-toe app created with React Native and Pusher. Tutorial is available at
 
 ## Getting Started
 
-Create a new React Native project:
+1. Create a new React Native project:
 
 ```
 react-native init RNPusherTicTacToe
 ```
 
-Clone the repo in another directory:
+2. Clone the repo in another directory:
 
 ```
 git clone https://github.com/anchetaWern/RN-Pusher-TicTacToe.git
 ```
 
-Navigate inside the `app` directory of the cloned repo:
+3. Navigate inside the `app` directory of the cloned repo:
 
 ```
 cd RN-Pusher-TicTacToe/app
 ```
 
-Copy the `components` folder and `package.json` file and paste it on your React Native project. The `c:
+4. Copy the `components` folder and `package.json` file and paste it on your React Native project.
 
-Copy the contents of `index.android.js` from the cloned repo: https://github.com/anchetaWern/RN-Pusher-TicTacToe/blob/master/app/index.android.js and paste it in the `index.js` file of your React Native project.
+5. Copy the contents of `index.android.js` from the cloned repo: https://github.com/anchetaWern/RN-Pusher-TicTacToe/blob/master/app/index.android.js and paste it in the `index.js` file of your React Native project.
 
 
-Navigate inside the `server` directory of the cloned repo and update the `.env` file with your Pusher app details:
+6. Navigate inside the `server` directory of the cloned repo and update the `.env` file with your Pusher app details:
 
 ```
 cd RN-Pusher-TicTacToe/server
 touch .env
 ```
 
-Still inside the `server` directory, install the server dependencies:
+7. Still inside the `server` directory, install the server dependencies:
 
 ```
 npm install
 ```
 
-Use [now.sh](https://zeit.co/now) to deploy the server or use [Ngrok](https://ngrok.com/) to simply expose it to the internet. Take note of the URL as this will serve as the base URL for the auth endpoint to be used by Pusher. The auth endpoint is `/pusher/auth`.
+8. Use [now.sh](https://zeit.co/now) to deploy the server or use [Ngrok](https://ngrok.com/) to simply expose it to the internet. Take note of the URL as this will serve as the base URL for the auth endpoint to be used by Pusher. The auth endpoint is `/pusher/auth`.
 
 
-Navigate inside the root directory of your React Native project and install the dependencies:
+9. Navigate inside the root directory of your React Native project and install the dependencies:
 
 ```
 npm install
 ```
 
-Still in the root directory of your React Native project, open the `components/Main.js` file and update the [placeholder values](https://github.com/anchetaWern/RN-Pusher-TicTacToe/blob/master/app/components/Main.js#L46-L48) with your Pusher app details and auth endpoint (example: https://myapp.ngrok.com/pusher/auth)
+10. Still in the root directory of your React Native project, open the `components/Main.js` file and update the [placeholder values](https://github.com/anchetaWern/RN-Pusher-TicTacToe/blob/master/app/components/Main.js#L46-L48) with your Pusher app details and auth endpoint (example: https://myapp.ngrok.com/pusher/auth)
 
-Run the app:
+11. Run the app:
 
 ```
 react-native run-android
